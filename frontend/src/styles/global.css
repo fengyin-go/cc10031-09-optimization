@@ -70,3 +70,27 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .analysis-chart { display: flex; align-items: flex-end; gap: 8px; height: 160px; padding: 12px 0; }
 .analysis-bar { flex: 1; border-radius: 4px 4px 0 0; background: var(--brand); min-width: 24px; position: relative; transition: height 0.4s; }
 .analysis-bar span { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 10px; color: var(--muted); white-space: nowrap; }
+/* 分页续做工作台 */
+.pagination-panel { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin: 12px 0; }
+.pagination-panel .panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.pagination-panel h3 { margin: 0; font-size: 15px; }
+.panel-message { font-size: 13px; color: #0f7b3f; margin: 8px 0 0; }
+.panel-error { font-size: 13px; color: #b42318; margin: 8px 0 0; }
+.site-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.site-chip { display: flex; flex-direction: column; gap: 2px; min-width: 180px; text-align: left; border: 1px solid var(--border); border-radius: 8px; background: #f8fafc; padding: 8px 10px; font-size: 12px; color: var(--muted); cursor: pointer; }
+.site-chip strong { color: #1f2937; font-size: 13px; }
+.site-chip.active { border-color: var(--brand); background: #eef4ff; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.tag { display: inline-block; border-radius: 4px; background: #eef2f7; color: #334155; font-size: 12px; padding: 1px 6px; margin-right: 4px; }
+.tag.ok { background: #e7f7ee; color: #0f7b3f; }
+.tag.warn { background: #fff4e5; color: #b45309; }
+.muted { color: var(--muted); font-size: 12px; }
+.detail-block { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 10px; }
+.detail-block summary { cursor: pointer; font-size: 13px; font-weight: 600; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 10px; }
+.detail-grid h4 { margin: 0 0 6px; font-size: 13px; }
+.version-list, .mapping-history { list-style: none; padding: 0; margin: 0; font-size: 12px; display: flex; flex-direction: column; gap: 6px; }
+.mapping-form { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; margin-bottom: 8px; }
+.mapping-field { display: flex; flex-direction: column; gap: 2px; font-size: 12px; color: var(--muted); }
+.mapping-field input { border: 1px solid var(--border); border-radius: 6px; padding: 5px 8px; font-size: 12px; }
+.data-table.compact th, .data-table.compact td { padding: 5px 8px; font-size: 12px; }
